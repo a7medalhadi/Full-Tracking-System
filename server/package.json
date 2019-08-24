@@ -1,0 +1,28 @@
+{
+  "name": "rest-server",
+  "version": "1.0.0",
+  "description": "app backend",
+  "main": "server.js",
+  "scripts": {
+    "test": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://githup.com/a7medalhadi/my-backend.git"
+  },
+  "keywords": [
+    "REST",
+    "api",
+    "server"
+  ],
+  "author": "Ahmed Frah",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "body-parser": "^1.18.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.4.20",
+    "morgan": "^1.9.1"
+  }
+}

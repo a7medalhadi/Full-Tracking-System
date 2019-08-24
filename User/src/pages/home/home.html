@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <div #map id="map" style="height: 100%;" ></div>
+  <ion-list>
+    <ion-item  *ngFor="let location of locations ">
+     <p>{{location.cnum}}</p>
+      <p>{{location.from}}</p>
+      <p>{{location.to}}</p>
+     <p>{{location.lat}}</p>
+     <p>{{location.long}}</p>
+    </ion-item>
+
+  </ion-list>
+</ion-content>

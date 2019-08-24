@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  The world is your oyster.
+ <!-- <ion-list>
+
+    <ion-item>
+      <ion-label floating>Enter your name...</ion-label>
+      <ion-input [(ngModel)]="name" type="text"></ion-input>
+    </ion-item>
+
+  </ion-list>
+  <button ion-button primary (click)="checkName()">Enter</button>
+
+  <div>
+    <h1>{{result.message}}</h1>
+  </div> -->
+  <ion-list>
+    <ion-item>
+      <ion-avatar item-start>
+ <ion-icon ios="ios-locate" md="md-locate"></ion-icon>
+
+      </ion-avatar>
+      <h2>Latitude : {{lat}}</h2>
+
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar item-start>
+        <ion-icon ios="ios-locate" md="md-locate"></ion-icon>
+
+      </ion-avatar>
+      <h2>Longitude : {{long}}</h2>
+
+    </ion-item>
+
+
+
+    <ion-item>
+
+  <button ion-button color="secondary" (click)="startGps()">Start</button>
+ <button ion-button color="danger" (click)="stopGps()">Stop</button>
+
+ <button ion-button color="danger" (click)="signOut()">Sign Out</button>
+
+    </ion-item>
+
+
+  </ion-list>
+</ion-content>
